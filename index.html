@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selamat Hari Raya Idul Fitri</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Kustom -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Great+Vibes&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-effects">
+        <div class="circle circle-1"></div>
+        <div class="circle circle-2"></div>
+        <div class="circle circle-3"></div>
+        <div class="sparkle-effect"></div>
+        <canvas id="particles"></canvas>
+    </div>
+    <div class="ketupat-container">
+        <div class="ketupat"></div>
+    </div>
+    <div class="wave-effect"></div>
+    <div class="card">
+        <div class="card-background"></div>
+        <div class="content">
+            <div class="salam">🙏🏻 السلام عليكم 🙏🏻</div>
+            <div class="nama">Muhajir</div>
+            <h1>🎉 Selamat Hari Raya Idul Fitri 🎉</h1>
+            <p class="custom-text">
+                Semoga Idul Fitri membawa <span>keberkahan</span> dan menjadikan kita pribadi yang lebih <span>baik</span>. 
+                Mohon maaf lahir dan batin.
+            </p>
+            <div class="footer">Semoga kita semua kembali ke fitrah</div>
+            <!-- Tombol QR dipindahkan ke sini -->
+            <button class="qr-button" onclick="openQRModal()">Kirim THR via QR</button>
+            <a href="https://wa.me/6285372736144?text=Selamat%20Hari%20Raya%20Idul%20Fitri.%20Mohon%20maaf%20lahir%20dan%20batin." target="_blank" class="wa-button">Balas Pesan via WhatsApp</a>
+        </div>
+        <!-- Emoji Masjid -->
+        <div class="mosque mosque-top-left">🕌</div>
+        <div class="mosque mosque-top-right">🕌</div>
+        <div class="mosque mosque-bottom-left">🕌</div>
+        <div class="mosque mosque-bottom-right">🕌</div>
+    </div>
+    <div class="qr-modal" id="qrModal">
+        <div class="qr-modal-content">
+            <!-- Ganti URL ini dengan file QR Code Anda -->
+            <img src="my-qr-code.png" alt="QR Code">
+            <p>Scan kode QR untuk mengirim THR.</p>
+            <button onclick="closeQRModal()">Tutup</button>
+        </div>
+    </div>
+    <!-- Music Player -->
+    <div class="music-player">
+        <!-- Hanya ikon musik -->
+        <button id="playPauseBtn" onclick="toggleMusic()">🎵</button>
+    </div>
+    <audio id="backgroundMusic" loop>
+        <!-- Ganti URL ini dengan file MP3 Anda -->
+        <source src="my-music.mp3" type="audio/mpeg">
+        Browser Anda tidak mendukung pemutaran audio.
+    </audio>
+    <script src="script.js"></script>
+</body>
+</html>
